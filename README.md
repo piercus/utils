@@ -26,9 +26,17 @@ objMapAsync.js contains 2 functions :
       
       var arr = ["a", "b", "c"];
       
-      arr.mapAsync(obj, cbOne, cbAll);
+      arr.mapAsync(cbOne, cbAll);
       
     });
+
+use
+=====
+* objMapAsync(object, cbEach, [options,] cbAll);
+Call cbEach for each key/value of the object, and cbAll when each pair has been called and has returned a cb.
+
+* arr.mapAsync(cbEach, [options,] cbAll);
+Call cbEach for each key/value of the array, and cbAll when each pair has been called and has returned in a cb.
 
 options
 =====
