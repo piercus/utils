@@ -5,30 +5,30 @@ Asynchroous configurable map function for nodejs.
 
 objMapAsync.js contains 2 functions :
 
-require("utils/objMapAsync.js", function(objMapA){
-  
-  var cbOne = function(value, key, cb){
-    cb(null, "key : "+key+", value : "+value);
-  };
-  
-  var cbAll = function(error, results){
-    console.log("errors : ", errors, " results : ", results);
-  };
-  
-  //use it on an object :
-  
-  var obj = {"a" : "c", "foo" : "bar"};
-  
-  objMapA(obj, cbOne, cbAll);
-  
-  
-  //use it on an arrays :
-  
-  var arr = ["a", "b", "c"];
-  
-  arr.mapAsync(obj, cbOne, cbAll);
-  
-});
+    require("utils/objMapAsync.js", function(objMapA){
+      
+      var cbOne = function(value, key, cb){
+        cb(null, "key : "+key+", value : "+value);
+      };
+      
+      var cbAll = function(error, results){
+        console.log("errors : ", errors, " results : ", results);
+      };
+      
+      //use it on an object :
+      
+      var obj = {"a" : "c", "foo" : "bar"};
+      
+      objMapA(obj, cbOne, cbAll);
+      
+      
+      //use it on an arrays :
+      
+      var arr = ["a", "b", "c"];
+      
+      arr.mapAsync(obj, cbOne, cbAll);
+      
+    });
 
 options
 =====
