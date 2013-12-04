@@ -108,7 +108,12 @@ rjs.define("utils/objMapAsync", ["Function/curry"], function(){
           progressBar : options.progressBar || false
         }
       , nParallel = options.nParallel || (options.stepByStep && 1) || false;
-
+    
+    // when this is empty Array or Object 
+    if(scope.l === 0){
+      return cb();
+    }
+    
     groupCb.call(this, nParallel, scope, keys);
 
   };
