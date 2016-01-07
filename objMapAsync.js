@@ -1,6 +1,5 @@
-var rjs = require("requirejs");
 "use strict";
-rjs.define("utils/objMapAsync", ["Function/curry"], function(){
+define("utils/objMapAsync", ["Function/curry"], function(){
 
   var eachCb = function(nextCall, key, err, o){
     if (this.stopped) {
