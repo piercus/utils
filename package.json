@@ -1,0 +1,14 @@
+{
+  "name": "utils",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "objMapAsync utilitary"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/piercus/utils.git"
+  },
+  "author": "Pierre Colle",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
